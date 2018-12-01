@@ -4,11 +4,12 @@ const express = require('express'),
 
 app.set('view engine', 'pug');
 app.set('views', 'views');
+app.use(express.static(__dirname + '/public'));
 app.get('/', function(req,res){
-    res.render('index');
+    res.render('login');
 })
 app.get('/home', function(req,res){
-    res.render('home');
+    res.render('index');
 })
 app.get('/feed', function(req,res){
     res.render('feed');
