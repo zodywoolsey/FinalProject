@@ -4,9 +4,7 @@ html
     meta(charset='UTF-8')
     title Robot Hash
     meta(name='description', content='The Robot Hash API')
-    style
-      // Custom styles for this template
-      include ../public/style.css
+    link(href='css/style.css', rel='stylesheet', type='text/css')
   body
     #wrapper
       #header
@@ -21,11 +19,11 @@ html
         .navigation
           ul
             li
-              a(href='login') Login
+              a(href='/') Login
             li
-              a(href='index') Home
+              a(href='/home') Home
             li
-              a(href='feed') Feed
+              a(href='/feed') Feed
       #page_content
         .right_section
           .common_content
@@ -48,5 +46,6 @@ html
               p
         .clear
         #footer
-          | Domo arigato, Mr. Roboto
+          | FrontEnd: Kael Shuck
+          | BackEnd: Zody Woolsey
           br
