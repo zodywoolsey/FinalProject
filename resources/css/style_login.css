@@ -178,20 +178,20 @@ h2 {
 /*----Login CONTENT----*/
 #page_content img{
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
 #page_content p{
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
 }
 
 #textbox h2{
-    text-align: center;
+	text-align: center;
 	margin-top: 20%;
 }
 
@@ -211,9 +211,9 @@ h2 {
 #page_content{
 	padding:0px 0px 40%;
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
 	border: thick double black;
 }
 
