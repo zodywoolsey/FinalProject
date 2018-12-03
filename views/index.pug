@@ -5,7 +5,11 @@ html
 		title Robot Hash
 		meta(name='description', content='The Robot Hash API')
 		link(href='css/style.css', rel='stylesheet', type='text/css')
+		script(type='text/javascript',src='js/script.js',defer)
 	body
+		#userPanel
+			div
+				p #{username}
 		#wrapper
 			#header
 				.top_banner
@@ -15,12 +19,16 @@ html
 				.navigation
 					ul
 						li
-							a(href='/') Login
-						li
-							a(href='/home') Home
+							a(href='/') Home
 						li
 							a(href='/feed') Feed
 			#page_content
+				img(src='http://robohash.org/example',alt='generated robot image',id='roboImage')
+				input(id='roboText')
+				#twitter
+					a(href="https://twitter.com/share?ref_src=twsrc%5Etfw", class="twitter-share-button", data-size="large", data-text="", data-url="test", data-via="", data-hashtags="KaZFinalProject", data-related="", data-lang="en", data-dnt="true", data-show-count="false") Tweet
+					script(async, src="https://platform.twitter.com/widgets.js", charset="utf-8")
+				hr
 				.right_section
 					.common_content
 						h2 RoboHash
@@ -37,6 +45,6 @@ html
 							p.
 								RoboHash reviewers are saying "Life Changing", "Saved my marriage", "The 8th Wonder of the World"
 				.clear
-				#footer.
-					FrontEnd: Kael Shuck
-					BackEnd: Zody Woolsey
+				#footer
+					p FrontEnd: Kael Shuck
+					p BackEnd: Zody Woolsey

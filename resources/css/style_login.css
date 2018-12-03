@@ -127,6 +127,27 @@ h2 {
 	text-decoration: none;
 }
 
+#userPanel {
+	position: fixed;
+	background-color: black;
+	margin: 1em;
+}
+
+#userPanel:hover{
+	cursor: pointer;
+}
+
+#userPanel > div {
+	padding: .4em;
+	vertical-align: middle;
+}
+#userPanel > div > p {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
 #header p{
 	font-size:16px;
 	margin-left:1px;
@@ -176,6 +197,15 @@ h2 {
 
 
 /*----Login CONTENT----*/
+
+input{
+	text-align: center;
+	margin: .5em auto .5em auto;
+	display: block;
+	font-size: xx-large;
+	width: 95%;
+}
+
 #page_content img{
 	display: block;
 	margin-left: auto;

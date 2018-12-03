@@ -2,38 +2,49 @@ doctype html
 html
 	head
 		meta(charset='UTF-8')
-		title Robot Hash The Feed
+		title Monster Hash
 		meta(name='description', content='The Robot Hash API')
-		link(href='css/style_feed.css', rel='stylesheet', type='text/css')
+		link(href='css/style.css', rel='stylesheet', type='text/css')
+		script(type='text/javascript',src='js/script.js',defer)
 	body
-		#header
-			.top_banner
-				h1 Feed
-				
-				
-			.navigation
+		#userPanel
+			div
+				p #{username}
+		#wrapper
+			#header
+				.top_banner
+					h1 RoboHash
+					p
+						| Presenting RoboHash and Twitter #[em combined]. It's awe inspiring. We know.
+				.navigation
 					ul
 						li
-							a(href='/') Login
-						li
-							a(href='/home') Home
+							a(href='/') Home
 						li
 							a(href='/feed') Feed
 			#page_content
-				h2 Post 1 
-				p
-					| This is supposed to be a twitter post or something of that sort so Zody do your thing!
-				
-				
-				h2 Post 2 
-				p
-					 | This is supposed to be a twitter post or something of that sort so Zody do your thing!
-				
-				
-				h2 Post 3 
-				p
-					 | This is supposed to be a twitter post or something of that sort so Zody do your thing!
-		#footer
-			| FrontEnd: Kael Shuck
-			| BackEnd: Zody Woolsey
-			
+				img(src='http://robohash.org/example',alt='generated robot image',id='roboImage')
+				input(id='roboText')
+				#twitter
+					a(href="https://twitter.com/share?ref_src=twsrc%5Etfw", class="twitter-share-button", data-size="large", data-text="", data-url="test", data-via="", data-hashtags="KaZFinalProject", data-related="", data-lang="en", data-dnt="true", data-show-count="false") Tweet
+					script(async, src="https://platform.twitter.com/widgets.js", charset="utf-8")
+				hr
+				.right_section
+					.common_content
+						h2 RoboHash
+						hr
+						p.
+							Using our website allows you to leverage the incredibly powerful, dynamic, and innovative RoboHash API. It sends algorithmically generated pictures of robots.
+					.top_content
+						.column_one
+							h2 Dynamically Generated
+							p.
+							Based on a highly advanced and dynamic algorithm RoboHash will attempt to send you a robot perfectly suited for the text you provide.
+						.column_two.border_left
+							h2 Life Changing
+							p.
+								RoboHash reviewers are saying "Life Changing", "Saved my marriage", "The 8th Wonder of the World"
+				.clear
+				#footer
+					p FrontEnd: Kael Shuck
+					p BackEnd: Zody Woolsey

@@ -108,7 +108,7 @@ h2 {
 }
 
 #header .top_banner{
-	background:url(robo.png) no-repeat left top;
+	background:url(../images/robo.png) no-repeat left top;
 	height:150px;
 	padding:60px 95px 0 95px;
 }
@@ -126,6 +126,27 @@ h2 {
 
 #header h1 a:hover {
 	text-decoration: none;
+}
+
+#userPanel {
+	position: fixed;
+	background-color: black;
+	margin: 1em;
+}
+
+#userPanel:hover{
+	cursor: pointer;
+}
+
+#userPanel > div {
+	padding: .4em;
+	vertical-align: middle;
+}
+#userPanel > div > p {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 600;
+	font-size: 1.5em;
 }
 
 #header p{
@@ -169,8 +190,23 @@ h2 {
 
 
 /*----start page content----*/
+input{
+	text-align: center;
+	margin: .5em auto .5em auto;
+	display: block;
+	font-size: xx-large;
+	width: 95%;
+}
+
 #page_content{
 	padding:0px 0px 20px;
+}
+
+#page_content img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
 #page_content .right_section{
@@ -193,6 +229,13 @@ h2 {
 	margin-bottom:20px;
 }
 
+#twitter{
+	text-align: center;
+	margin: .5em auto .5em auto;
+	display: block;
+	font-size: xx-large;
+	width: 95%;
+}
 
 .common_content{
 	padding:0 0 20px 0;
